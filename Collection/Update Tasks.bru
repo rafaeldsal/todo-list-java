@@ -1,0 +1,17 @@
+meta {
+  name: Update Tasks
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:8080/tasks/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "description": "Desenvolver projeto SpringBoot e Java"
+  }
+}
